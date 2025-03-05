@@ -1,0 +1,30 @@
+
+src/
+├── assets/              # Static assets (images, fonts, etc.)
+├── components/          # Reusable UI components (buttons, modals, etc.)
+├── features/            # Feature-based modules
+│   ├── auth/            # Authentication feature (login, registration)
+│   │   ├── components/  # Auth-specific components (LoginForm, RegisterForm)
+│   │   ├── hooks/       # Auth-related hooks (useLogin, useAuth)
+│   │   ├── services/    # API calls related to auth (AuthService)
+│   │   ├── types.ts     # Auth-related types (AuthResponse, User)
+│   │   ├── authSlice.ts # Redux slice for auth (if using Redux)
+│   │   ├── AuthPage.tsx # Page component for login and register
+│   ├── dashboard/       # Dashboard feature (for logged-in users)
+│   │   ├── components/  # Dashboard-specific components
+│   │   ├── services/    # Dashboard-specific services
+│   │   ├── types.ts     # Dashboard types
+│   │   ├── DashboardPage.tsx # Dashboard page
+├── hooks/               # Global custom hooks (useFetch, useWindowDimensions)
+├── layouts/             # Layout components (Navbar, Sidebar, etc.)
+├── pages/               # Page components (HomePage, DashboardPage)
+├── providers/           # Context providers (AuthProvider, ThemeProvider)
+├── services/            # Global API service functions (axios, fetch, etc.)
+├── store/               # Global state management (Redux, Zustand)
+├── types/               # Global TypeScript types and interfaces (User, APIResponse)
+├── utils/               # Helper functions (dateFormatter, validation)
+├── App.tsx              # Main application component
+├── main.tsx             # Entry point (ReactDOM.render)
+├── routes.tsx           # Route definitions (React Router)
+├── index.css            # Global styles
+├── vite.config.ts       # Vite configuration (or webpack.config.js)
